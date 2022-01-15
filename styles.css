@@ -1,0 +1,108 @@
+body {
+    min-height: 100%;
+    background-image: url("./back7.jpg");
+    height: 500px; /* You must set a specified height */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-attachment: fixed;
+
+   }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50vh;
+    max-width: 120vh;
+    gap: 20px;
+    justify-content: center;
+    width: 70%;
+    min-width: 1000px;
+    margin: auto;
+    
+}
+
+.cards {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    
+}
+
+.carta {
+    width: 50em;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+}
+
+.carta:hover {
+    transform: translateY(-40px);
+    -webkit-transform: translateY(-40px);
+    -moz-transform: translateY(-40px);
+    -ms-transform: translateY(-40px);
+    -o-transform: translateY(-40px);
+}
+
+.btn:hover {
+    background: #F4A460;
+    box-shadow: 0 0 5px #F4A460, 0 0 25px
+    #F4A460, 0 0 50px #F4A460, 0 0 200px #F4A460;
+}
+
+.jdata{
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+
+.navbar-nav a {
+    color: #fff;
+    display: inline-block;
+    background-color: rgb(98, 6, 110);
+    border-radius: 4px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    
+
+}
+
+.navbar-nav a:hover {
+    background-color: #F64C72;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #553D67;
+    cursor: pointer;
+    color: white;
+  }
+  
+  /* Style the active class (and buttons on mouse-over) */
+  .navbar-nav .active, .btn:hover {
+    background-color: #F64C72;
+    color: white;
+  }
+
+  .magazine {
+    position: relative;
+	z-index: 2;	
+	float: right;
+	width: 200px;
+	overflow: hidden;
+  }
